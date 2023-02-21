@@ -1,0 +1,54 @@
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 40px;
+
+    label {
+        position: relative;
+        margin: 20px;
+        background: transparent;
+        width: 100%;
+        
+        span {
+            
+            font-style: italic;
+        }
+        
+        input {
+            background: transparent;
+            position: absolute;
+            top: -5px;
+            left: -10px;
+            padding: 10px;
+            width: 100%;
+            border-bottom: 1px solid black;
+            transition: all 0.3s ease-in;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+            &:active, &:focus {
+                background: #f0f0f0;
+                position: absolute;
+                top: 24px;
+            }
+        }
+    }
+
+    button {
+        padding: 10px 30px;
+        border: 1px solid black;
+        border-radius: 6px;
+        background: #000;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid black;
+            color: black;
+        }
+    }
+}
