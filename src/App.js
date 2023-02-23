@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SignIn from './components/SignIn';
-//import SignIn from './components/SignUp';
-import './App.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
+import './App.scss'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
 		<Router>
 			<Routes>
 				<Route exact path='/sign-in' element={ <SignIn /> } />
-				{/* <Route exact path='/sign-up' element={ <SignUp /> } /> */}
+				<Route exact path='/sign-up' element={ <SignUp /> } />
 			</Routes>
 		</Router>
     </div>
