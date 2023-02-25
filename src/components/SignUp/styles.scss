@@ -5,7 +5,7 @@
     align-items: center;
     background: #ffffff;
     padding: 80px;
-
+    
     .title {
         position: absolute;
         top: 0;
@@ -13,7 +13,8 @@
         border-bottom: 1px solid black;
         padding-inline: 20px;
     }
-
+    
+    
     label {
         position: relative;
         margin: 20px;
@@ -26,7 +27,7 @@
             left: 10px;
             font-style: italic;
             transition: all 0.3s ease-in;
-
+            
             &.active {
                 font-size: 13px;
                 font-weight: 600;
@@ -41,7 +42,7 @@
             width: 100%;
             border-bottom: 1px solid black;
             transition: all 0.3s ease-in;
-
+            
             &.active {
                 border: none;
                 border-radius: 5px;
@@ -49,7 +50,8 @@
             }
         }
     }
-
+    
+    
     button {
         padding: 10px 30px;
         border: 1px solid black;
@@ -58,14 +60,14 @@
         color: white;
         cursor: pointer;
         transition: all 0.3s ease-in;
-
+        
         &:hover {
             background: transparent;
             border: 1px solid black;
             color: black;
         }
     }
-
+    
     .footer {
         display: grid;
         place-items: center;

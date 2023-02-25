@@ -8,7 +8,8 @@ const SignUp = () => {
 
     useEffect(() => {
         setData({
-            full_name: '',
+            first_name: '',
+            last_name: '',
             username: '',
             password: '',
             p2:''
@@ -19,9 +20,35 @@ const SignUp = () => {
     return (
             <form className="sign-up">
                 <div className="title">Create an account.</div>
+                
+                <label>
+                    <span className={data.first_name ? 'active' : ''}>First name</span>
+
+                    <input
+                        type="text"
+                        className={data.first_name ? 'active' : ''}
+                        value={data.first_name}
+                        onChange={e=> setData({...data, first_name: e.target.value})}
+                        required
+                        />
+
+                </label>
 
                 <label>
-                    <span className={data.username ? 'active' : ''}>Username</span>
+                    <span className={data.last_name ? 'active' : ''}>Last name</span>
+
+                    <input
+                        type="text"
+                        className={data.last_name ? 'active' : ''}
+                        value={data.last_name}
+                        onChange={e=> setData({...data, last_name: e.target.value})}
+                        required
+                        />
+
+                </label>
+
+                <label>
+                    <span className={data.username ? 'active' : ''}>Choose a username</span>
 
                     <input
                         type="text"
@@ -40,6 +67,17 @@ const SignUp = () => {
                         className={data.password ? 'active' : ''}
                         value={data.password}
                         onChange={e=> setData({...data, password: e.target.value})}
+                        required
+                        />
+                </label>
+
+                <label>
+                    <span className={data.p2 ? 'active' : ''}>Re-enter password</span>
+                    <input
+                        type="password"
+                        className={data.p2 ? 'active' : ''}
+                        value={data.p2}
+                        onChange={e=> setData({...data, p2: e.target.value})}
                         required
                         />
                 </label>
