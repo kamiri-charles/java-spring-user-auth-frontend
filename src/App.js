@@ -7,7 +7,7 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <div className="App">
-		<Router>
+		<Router basename='jsuaf'>
 			<Routes>
 				<Route exact path='/' element={ <Home />} />
 				<Route exact path='/sign-in' element={ <SignIn /> } />

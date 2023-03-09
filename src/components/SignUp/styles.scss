@@ -26,11 +26,11 @@
             top: 5px;
             left: 10px;
             font-style: italic;
+            font-size: 15px;
             transition: all 0.3s ease-in;
             
             &.active {
                 font-size: 13px;
-                font-weight: 600;
                 top: -20px;
                 left: 0;
             }
